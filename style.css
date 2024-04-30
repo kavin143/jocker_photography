@@ -1,0 +1,530 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Design PART FOR NABVBAR */
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+    
+  }
+.logo img{
+  height: 90px;
+  width: 180px;
+}
+
+.NavLinks{
+    display: flex;
+    column-gap: 30px;
+    margin-right:50px ;
+  }
+
+.NavLinks ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.NavLinks a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .navbar-menu{
+    display: none;
+    cursor: pointer;
+    color:#000;
+    font-size: 40px;
+  }
+.NavLinks a.active{
+    color:red;
+}
+
+.NavLinks a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+/* DESIGN PART FOR SIDE NAVBAR */
+
+.SideNav{
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    transition: 1s;z-index: 2;
+  }
+  .SideNav-links ul li{
+    list-style: none;
+    margin-bottom: 30PX;
+  }
+  .SideNav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .SideNav a:hover{
+    color: red;
+  }
+  .SideNav p{
+    color: white;
+  }
+
+
+  /* Design part for Introduction */
+
+  .Section-3{
+    display: flex;
+    padding: 5%;
+  }
+  
+  .intro-sec,img{
+    margin-top: 10%;
+  }
+  .intro-sec h2 span{
+    color:#4B86C1;
+  }
+
+  .intro-sec{
+    position: relative;
+    padding: 50px;
+    top: 50px;
+  }
+  .intro-sec p{
+    width: 35vw;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+  .deepak-pic{
+    height:60vh;
+    width:45vw;
+    border-radius: 60px;
+    box-shadow: 20px 20px 20px rgb(0,0,0,0.5);
+  }
+
+  .hr-line{
+    height: 5px;
+    width: 90%;
+    border-radius: 20px;
+    margin-left: 4rem;
+    background-color: #000;
+  }
+
+
+    /* DESIGN PART FOR OUR SERVICES */
+
+  .Section-4{
+    padding: 5%;
+  }
+
+  .service-cont{
+    text-align: center;
+  }
+
+  .service-cont p{
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .box{
+    height: 450px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    transition: all .45s ease;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+
+  .box:hover{
+    transform:translateY(-8px);
+    cursor: pointer;
+}
+
+  .services{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 50px;
+  }
+
+ .box img{
+    width:300px;
+    height: 220px;
+    margin-top: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .box h3{
+    letter-spacing: 2px;
+    margin-left: 10px;
+  }
+  .box P{
+    font-size: 13px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .box div{
+    text-align: center;
+}
+  .read{
+    display:inline-block;
+    padding:8px 18px;
+    /* background: #808080; */
+    background: #2c2c2c;
+    color: white;
+    font-size: 14px;
+    font-weight:500;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+
+.read-1,.read-2{
+  margin-top: 20px;
+}
+.read-3{
+  margin-top: 35px;
+}
+.read-4{
+  margin-top: 30px;
+}
+.read-5{
+  margin-top: 10px;
+}
+
+/* DESIGN PART FOR ABOUT US */
+
+.Section-5{
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.Section-5 img{
+  width: 25rem;
+  height: 28rem;
+  margin-top: 0px;
+  border-radius: 30px;
+  box-shadow: 20px 20px 20px rgb(0,0,0,0.3);
+  transition: all .45s ease;
+}
+
+.Section-5 img:hover{
+  transform:translateY(-8px);
+  cursor: pointer;
+}
+.Section-5 div{
+  text-align: start;
+}
+.About-us{
+  width:35rem;
+  position: relative;
+  top: 8rem;
+}
+
+.About-us h2 span{
+  color: red;
+}
+.About-us p{
+  margin-top: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* DESIGN PART FOR FOOTER */
+.Section-6{
+  background-color: #000;
+  padding:5%;
+}
+
+.Section-6 .para{
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.socialmedia{
+  display: inline-block;
+}
+.socialmedia a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  line-height: 10px;
+}
+h4{
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  padding: 5px;
+  letter-spacing: 2px;
+}
+
+footer p{
+  width: 30rem;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.Section-6 .footerbottom{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.float a{
+  font-size: 50px;
+  color: green;
+  position: fixed;
+  top: 85vh;
+  left:93vw;
+}
+
+
+
+
+
+
+@media screen and (max-width:1100px) {
+  .Section-5{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Section-5 img{
+    margin-left: 30%;
+  }
+  .About-us{
+    width: 45rem;
+    position: relative;
+    top: 2rem;
+    padding: 30px;
+    text-align: center;
+    margin-left: 10vw;
+  }
+  .About-us h2{
+    text-align: center;
+  }
+  .About-us p{
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width:1000px) {
+  .intro-sec p{
+    width: 30vw;
+  }
+  .deepak-pic{
+    height:55vh;
+    width:40vw;
+  }
+  .Section-5 img{
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width:990px) {
+
+  .Section-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5%;
+    align-items: center;
+  }
+  .intro-sec h2{
+    text-align: center;
+  }
+  .intro-sec p{
+    width: 30rem;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-align: center  ;
+  }
+  .deepak-pic{
+    height:400px;
+    width: 600px;
+  }
+
+  footer p{
+    width: 25rem;
+    font-size: 20px;
+  }  
+  
+}
+@media screen and (max-width:800px) {
+ 
+
+  .navbar-menu{
+    display:block;
+  }
+  
+  .NavLinks{
+    display: none;
+  }
+  .SideNav-links a.active{
+      color:red;
+  }
+}
+
+
+
+/* For screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .NavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 998;
+  }
+
+  .logo img {
+    height: 60px;
+    width: auto;
+  }
+
+  .NavLinks {
+    display: none;
+  }
+
+  .navbar-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .SideNav {
+    width: 60%;
+    left: -60%;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background-color: black;
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  .SideNav.open {
+    left: 0;
+  }
+
+  .Section-3,
+  .Section-4,
+  .Section-5,
+  .Section-6 {
+    padding: 20px;
+  }
+
+   .intro-sec{
+    top: 100px;
+   }
+ .intro-sec p{
+    width: 65vw;
+    height: 27vh;
+    margin-top: 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .services{
+    column-gap: 50px;
+    row-gap: 60px;
+  }
+
+  .hr-line{
+    display: none;
+  }
+  .intro-sec,
+  .About-us {
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+  }
+
+  .About-us p{
+    font-size: 13px;
+}
+
+  .deepak-pic,
+  .Section-5 img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
+  .float a {
+    display: none;
+  }
+
+  .intro-sec p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  .socialmedia{
+    text-align: center;
+  }
+  .socialmedia a{
+  font-size: 20px;
+  line-height: 10px;
+}
+}
+
+
+ 
+
+
+ 
